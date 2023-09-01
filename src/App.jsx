@@ -1,0 +1,20 @@
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import Post from "./component/post";
+import PostFunction from "./component/PostFunction";
+import Comment from "./component/Comment";
+
+function App() {
+  return (
+    <>
+      <Post userId="Supanee" message="แย่จัง">
+        <Comment userId="Supanee" message="หิวข้าววววว" />
+      </Post>
+      <PostFunction />
+    </>
+  );
+}
+
+export default App;
